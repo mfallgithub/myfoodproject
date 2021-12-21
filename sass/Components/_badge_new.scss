@@ -1,0 +1,13 @@
+.badge_new{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: $tertiary-color;
+    color: #008766;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}

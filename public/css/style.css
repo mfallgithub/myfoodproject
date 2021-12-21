@@ -1,0 +1,635 @@
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rebound {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes loader {
+  0% {
+    background-color: #c4c3c0;
+  }
+  25% {
+    background-color: #c4c3c0;
+  }
+  50% {
+    background-color: #c4c3c0;
+  }
+  80% {
+    background-color: rgba(196, 195, 192, 0.5);
+  }
+  100% {
+    background-color: rgba(196, 195, 192, 0.5);
+    visibility: hidden;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  display: block;
+  width: max-content;
+  margin: auto;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px #c4c3c0;
+  padding: 15px 20px;
+  font-weight: bold;
+  transform: scale(1);
+  transition: transform 500ms;
+  opacity: 1;
+}
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  box-shadow: 2px 2px 20px black;
+}
+
+.heart {
+  font-size: 20px;
+  color: grey;
+}
+.heart:hover {
+  animation: fill 1s ease-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.badge_new {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.check_icons {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: all 0.7s ease-in-out;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rebound {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes loader {
+  0% {
+    background-color: #c4c3c0;
+  }
+  25% {
+    background-color: #c4c3c0;
+  }
+  50% {
+    background-color: #c4c3c0;
+  }
+  80% {
+    background-color: rgba(196, 195, 192, 0.5);
+  }
+  100% {
+    background-color: rgba(196, 195, 192, 0.5);
+    visibility: hidden;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  display: block;
+  width: max-content;
+  margin: auto;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px #c4c3c0;
+  padding: 15px 20px;
+  font-weight: bold;
+  transform: scale(1);
+  transition: transform 500ms;
+  opacity: 1;
+}
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  box-shadow: 2px 2px 20px black;
+}
+
+.heart {
+  font-size: 20px;
+  color: grey;
+}
+.heart:hover {
+  animation: fill 1s ease-out;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.badge_new {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.check_icons {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: all 0.7s ease-in-out;
+}
+
+.pr_header {
+  padding: 20px 25px 10px 25px;
+  display: flex;
+  align-items: center;
+}
+.pr_header__logo {
+  margin: auto;
+}
+.pr_header__back {
+  font-size: 20px;
+}
+
+.pr_img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pr_main {
+  margin-top: -30px;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+  background-color: #f6f6f6;
+  padding: 35px 15px 80px 15px;
+}
+.pr_main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.pr_main__header__title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.dishes {
+  padding-bottom: 40px;
+}
+.dishes__header {
+  margin-bottom: 25px;
+}
+.dishes__header ::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  animation: progress 2s;
+  animation-fill-mode: both;
+  transform: scale(0);
+}
+.dishes__card {
+  height: 70px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #c4c3c0;
+  animation: appear 0.5s;
+  animation-timing-function: cubic-bezier(0.57, -0.3, 0.36, 1.2);
+  transform: scale(0);
+  animation-fill-mode: both;
+}
+.dishes__card__txt {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dishes__card__txt--over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dishes__card__price {
+  margin-left: 10px;
+}
+.dishes__card__check {
+  height: 70px;
+  width: 60px;
+  opacity: 0;
+  background-color: #99E2D0;
+  margin-left: 25px;
+  margin-right: -70px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+.dishes__card:hover :nth-child(3) {
+  opacity: 1;
+  margin-right: 0px;
+}
+.dishes__card:hover .check_icons {
+  opacity: 1;
+  transform: rotate(-360deg);
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #c4c3c0;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader 1s;
+  animation-fill-mode: both;
+}
+.loader__circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 50px;
+  display: inline-block;
+  animation: boing 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.loader__circle--1 {
+  background-color: #9356DC;
+  animation-delay: 0.1s;
+}
+.loader__circle--2 {
+  background-color: #FF79DA;
+  animation-delay: 0.2s;
+}
+.loader__circle--3 {
+  background-color: #99E2D0;
+  animation-delay: 0.4s;
+}
+
+.mainheader {
+  height: 63px;
+  padding: 20px 0px 10px 0px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  font-weight: 700;
+  box-shadow: inset 0px 2px 5px 0px #c4c3c0;
+}
+.localisation__icon {
+  margin-right: 15px;
+}
+.localisation__text {
+  display: inline-block;
+}
+
+.explorer {
+  padding: 40px 30px 55px 30px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.explorer__title {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.explorer__parag {
+  margin-bottom: 30px;
+}
+
+.tuto {
+  padding: 55px 20px 45px 20px;
+}
+.tuto__title {
+  margin-bottom: 30px;
+}
+.tuto__card {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 2px 2px 10px #c4c3c0;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0 70px 0 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.tuto__card__icon {
+  margin-right: 15px;
+  color: #c4c3c0;
+}
+.tuto__card__number {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -45px;
+  color: white;
+}
+.tuto__card:hover {
+  background-color: #f2eafb;
+}
+.tuto__card:hover :nth-child(2) {
+  color: #9356DC;
+}
+
+.restaurants {
+  padding: 55px 20px 45px 20px;
+  background-color: #f6f6f6;
+}
+.restaurants__title {
+  margin-bottom: 30px;
+}
+.restaurants__card {
+  position: relative;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #c4c3c0;
+}
+.restaurants__card__img {
+  display: block;
+  max-height: 175px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.restaurants__card__txt {
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer__logo {
+  font-size: 24px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+}
+.footer__txt {
+  color: white;
+}
+.footer__icons {
+  margin-right: 10px;
+}
+.footer__list {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+
+  h2 {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+  }
+  .container__card {
+    width: 49%;
+  }
+
+  h2, .footer__logo {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dishes {
+    width: 25%;
+  }
+
+  .pr_main {
+    width: 80%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

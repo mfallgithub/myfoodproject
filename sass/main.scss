@@ -1,0 +1,240 @@
+
+@import "./Utils/variables", "./Utils/mixins", "./Utils/animations"; 
+@import "./Base/typography", "./Base/reset";
+@import "./Components/btn", "./Components/heart", "./Components/badge_new", "./Components/_check_icons";
+@import "./Pages/resto_page";
+
+
+// =========INDEX=========
+// LOADER
+// HEADER
+// LOCALISATION
+// EXPLORER
+// TUTO
+// RESTAURANTS
+// FOOTER
+
+
+// -----------LOADER-----------
+.loader{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $shadow-color;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader 1s;
+    animation-fill-mode: both;
+    &__circle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 50px;
+        display: inline-block;
+        animation: boing 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        &--1{
+            background-color: $primary-color;
+            animation-delay: 0.1s;
+        }
+        &--2{
+            background-color: $secondary-color;
+            animation-delay: 0.2s;
+        }
+        &--3{
+            background-color: $tertiary-color;
+            animation-delay: 0.4s;
+        }
+    }
+}
+
+
+// -----------HEADER-----------
+.mainheader{
+    height: 63px;
+    padding: 20px 0px 10px 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// -----------LOCALISATION-----------
+.localisation{
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-weight: 700;
+    box-shadow: inset 0px 2px 5px 0px $shadow-color;
+    &__icon{
+        margin-right: 15px
+    }
+    &__text{
+        display: inline-block;
+    }
+}
+
+// -----------EXPLORER-----------
+.explorer{
+    padding: 40px 30px 55px 30px;
+    background-color: #f6f6f6;
+    text-align: center;
+    &__title{
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    &__parag{
+        margin-bottom: 30px;
+    }
+}
+
+// -----------TUTO-----------
+.tuto{
+    padding: 55px 20px 45px 20px;
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__card{
+            height: 75px;
+            display: flex;
+            align-items: center;
+            background-color: #f6f6f6;
+            @include shadow;
+            border-radius: 10px 10px 10px 10px;
+            padding: 0 70px 0 30px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            &__icon{
+                margin-right: 15px;
+                color: $shadow-color;
+            }
+            &__number{
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                background-color: $primary-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: -45px;
+                color: white;
+            }
+            &:hover{
+                background-color: lighten($primary-color, $amount: 35%);
+            }
+            &:hover :nth-child(2){
+                color: $primary-color;
+            }   
+        }
+
+}
+
+// -----------RESTAURANTS-----------
+.restaurants{
+  padding:  55px 20px 45px 20px;
+  background-color: #f6f6f6;
+  &__title{
+    margin-bottom: 30px;
+  }
+  &__card{
+      position: relative;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    @include shadow;
+    &__img{
+        display: block;
+        max-height: 175px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+    &__txt{
+        padding: 20px 15px 20px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+  }  
+}
+
+// -----------FOOTER-----------
+.footer{
+    background-color: #353535;
+    padding: 25px;
+    &__logo{
+        font-size: 24px;
+        font-family: 'Shrikhand', sans-serif;
+        color: white;
+        margin-bottom: 15px;
+    }
+    &__txt{
+        color: white;
+    }
+    &__icons{
+        margin-right: 10px;
+    }
+    &__list{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .container{
+        width: 75%;
+        margin: auto; 
+    }
+    h2{
+        width: 75%;
+        margin: auto; 
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
+        &__card{
+            width: 49%;
+        }
+    }
+
+    h2, .footer__logo{
+        width: 100%;
+        margin: 0;
+    }
+
+    .dishes{
+        width: 25%;
+    }
+
+    .pr_main{
+        width: 80%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+}
+
+@media screen and (min-width: 1920px){
+    .container{
+        max-width: 75%;
+        margin: auto;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
